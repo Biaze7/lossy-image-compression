@@ -12,7 +12,8 @@ def psnr(img1, img2):
         return 100
     PIXEL_MAX = 255.0
     return 20 * math.log10(PIXEL_MAX / math.sqrt(mse))
-orig = os.listdir('./dataset/')
+#orig = os.listdir('./dataset/') 
+orig = os.listdir('/content/lossy-image-compression/dataset/')
 tot_pix = 0
 s = 0
 for i in orig:
