@@ -10,7 +10,8 @@ class imgDataset(Dataset):
         self.files = []
         for r, d, f in os.walk(path):
             for file in f:
-                if '.png' in file:
+                #if '.png' in file:
+                if '.bmp' in file:
                     self.files.append(os.path.join(r, file))
         if indices!=None:
             files2 = self.files
