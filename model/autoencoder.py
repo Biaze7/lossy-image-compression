@@ -31,11 +31,14 @@ class autoencoder(nn.Module):
                                 )
         self.binarizer = Binarizer(64,128)
     def forward(self,x):
-    
+        
+         print(x.shape)
         x = self.enc(x)
+         print(x.shape) #AQUI
         x = self.binarizer(x)
-    #     print(x.shape)
+         print(x.shape)
         x = self.dec(x)
+         print(x.shape)
     #     x = (x+1)*255
     #     x.round_()
         return x
