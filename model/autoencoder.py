@@ -16,7 +16,8 @@ class autoencoder(nn.Module):
     #                             nn.Conv2d(128,128,3,stride=1,padding=1),
     #                             nn.Sigmoid()
                                 )
-        self.dec = nn.Sequential(nn.ConvTranspose2d(128,32,8,stride=4, padding=2),
+        #self.dec = nn.Sequential(nn.ConvTranspose2d(128,32,8,stride=4, padding=2),
+        self.dec = nn.Sequential(nn.ConvTranspose2d(64,32,8,stride=4, padding=2),
                                 nn.BatchNorm2d(32),
                                 nn.ReLU(),
                                 nn.ConvTranspose2d(32,3,2,2),
