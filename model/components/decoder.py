@@ -50,5 +50,6 @@ class Decoder():
 
         width, height = img.size
         img = img.crop((dw,dh,width,height));
-        img.save(out_path, "PNG")
+        #img.save(out_path, "PNG")
+        img.save(out_path, "BMP")
         return y
