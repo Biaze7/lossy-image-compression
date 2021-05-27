@@ -1,5 +1,6 @@
 import torch.nn as nn
-from model.components import Binarizer
+#from model.components import Binarizer
+from lossy-image-compression.model.components import Binarizer
 
 class autoencoder(nn.Module):
     def __init__(self):
