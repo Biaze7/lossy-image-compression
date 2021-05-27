@@ -1,6 +1,6 @@
 import torch.nn as nn
-#from model.components import Binarizer
-from model.components import binarizer
+from model.components import Binarizer
+
 
 class autoencoder(nn.Module):
     def __init__(self):
@@ -39,10 +39,10 @@ class autoencoder(nn.Module):
         x = self.enc(x)
         x = self.binarizer(x)
     #     print(x.shape)
-        aqui = x.shape
-        print('tensor is %s'%aqui)
-        v = torch.tensor(x)
-        print(v.shape)
+        #aqui = x.shape
+        #print('tensor is %s'%aqui)
+        #v = torch.tensor(x)
+        #print(v.shape)
         x = self.dec(x)
     #     x = (x+1)*255
     #     x.round_()
