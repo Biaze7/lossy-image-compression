@@ -17,7 +17,8 @@ tot_pix = 0
 s = 0
 for i in orig:
     print(i[:-4])
-    psnr_val = psnr(np.asarray(Image.open('dataset/%s'%i)),np.asarray(Image.open('out/decompressed/%scomp.png'%i[:-4])))
+    #psnr_val = psnr(np.asarray(Image.open('dataset/%s'%i)),np.asarray(Image.open('out/decompressed/%scomp.png'%i[:-4])))
+    psnr_val = psnr(np.asarray(Image.open('dataset/%s'%i)),np.asarray(Image.open('out/decompressed/%scomp.bmp'%i[:-4])))
     img = Image.open('dataset/%s'%i)
     width, height = img.size
     pixels = width * height
