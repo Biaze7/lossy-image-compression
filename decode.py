@@ -21,4 +21,5 @@ decoder = Decoder(args.model)
 
 for i in inputs:
     print('converting %s...'%i)
-    decoder.decompress(os.path.join(args.compressed, i), os.path.join(args.out, '%s.png'%i[:-4]))
+    #decoder.decompress(os.path.join(args.compressed, i), os.path.join(args.out, '%s.png'%i[:-4]))
+    decoder.decompress(os.path.join(args.compressed, i), os.path.join(args.out, '%s.bmp'%i[:-4]))
