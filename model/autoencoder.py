@@ -39,7 +39,10 @@ class autoencoder(nn.Module):
         x = self.enc(x)
         x = self.binarizer(x)
     #     print(x.shape)
-        print(x.shape)
+        aqui = x.shape
+        print('tensor is %s'%aqui)
+        v = torch.tensor(x)
+        print(v.shape)
         x = self.dec(x)
     #     x = (x+1)*255
     #     x.round_()
