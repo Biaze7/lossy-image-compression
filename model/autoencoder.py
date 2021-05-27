@@ -1,6 +1,6 @@
 import torch.nn as nn
-from model.components import Binarizer
-
+#from model.components import Binarizer
+from model.components import *
 
 class autoencoder(nn.Module):
     def __init__(self):
