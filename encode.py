@@ -14,7 +14,8 @@ args = parser.parse_args()
 f = os.listdir(args.image)
 inputs = []
 for i in f:
-    if '.png' in i:
+    #if '.png' in i:
+    if '.bmp' in i:
         inputs.append(i)
 
 encoder = Encoder(args.model)
