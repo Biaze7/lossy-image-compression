@@ -1,2 +1,2 @@
-#from model.components.binarizer import Binarizer
-from components.binarizer import Binarizer
+from model.components.binarizer import Binarizer
+
